@@ -1,7 +1,14 @@
 module.exports = {
-    devServer: {
-    //项目根路径问题
-    // publicPath:'./',
-    // baseUrl: './',
-  }
+  devServer: {
+    // proxy: {
+    //   '/api':{
+    //       target:'http//196.128.6.23',
+    //       changeOrigin:true
+    //   }
+    // }
+  },
+  //项目根路径的问题
+  publicPath:'/my-uusic'
+  // publicPath:'./',
+  // baseUrl: './',
 }
