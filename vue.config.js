@@ -19,5 +19,11 @@
 module.exports = {
     devServer: {
     },
+<<<<<<< HEAD
     // publicPath:'./'
+=======
+    //项目根路径问题
+    // publicPath:'./'
+    // baseUrl: './',
+>>>>>>> dev
   }
