@@ -8,7 +8,7 @@ module.exports = {
     // }
   },
   //项目根路径的问题
-  publicPath:'/my-uusic'
+  publicPath:'/my-uusic/dist'
   // publicPath:'./',
   // baseUrl: './',
 }
