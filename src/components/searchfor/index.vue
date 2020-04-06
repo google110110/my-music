@@ -63,11 +63,11 @@ import api from "@/until/api.js"
                             var d = data.data
                             console.log(d);
                             var search = [
-                                {value:'热搜单曲推荐  :',name:''}
+                                {value:'大家都在搜的  ',name:''}
                             ]
                             for(let i in d){
                                    search[parseInt(i) +1] = {
-                                       value:d[i].searchWord,
+                                       value:(parseInt(i)+1) + '.' + d[i].searchWord,
                                        name:d[i].searchWord,
                                        author:d[i]
                                    }
