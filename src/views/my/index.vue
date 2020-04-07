@@ -89,7 +89,7 @@ import loading from "@/components/loading";
 </script>
 
 <style lang="scss" scoped>
-.warper{width: 100%;display: flex;justify-content: center;background-color: burlywood;}
+.warper{width: 100%;display: flex;justify-content: center;background:#fff;opacity: 0.8;}
 .warper .cont{min-width: 900px;display: flex;justify-content: center;}
 .warper .cont .songs{cursor: pointer; height: 50px;width: 100%;display: flex;border-radius: 5px;box-sizing: border-box;border-top: 1px solid #333;border-bottom: 1px solid #333;}
 .warper .cont .songs:hover{box-shadow: 2px 2px 1px 1px #333;color: red;}
