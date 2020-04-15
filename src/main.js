@@ -5,6 +5,8 @@ import store from './store'
 import axios from 'axios'
 import PLAYER from '@/common/index.js'
 
+//适配移动端
+// import 'amfe-flexible'
 // axios.defaults.baseURL = '/apis'
 Vue.config.productionTip = false
 // Vue.use(PLAYER)

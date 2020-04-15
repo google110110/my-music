@@ -1,7 +1,7 @@
 <template>
 <div class="warper">
     <div class="box">
-        <div class="table">最新MV <span @click="getrout('/recommend/leaderboard')">返回</span></div>
+        <div class="table">最新MV</div>
         <div class="mv">
             <div v-if="mvlist && flag" class="mv-cont">
                 <div v-for="(item,index) in mvlist" :key="index" class="cont">
@@ -42,7 +42,7 @@ import videoComponents from '@/components/videoComponents'
             }
         },
         mounted() {
-            this.getdata(this.pages,15)
+            this.getdata(this.pages,12)
         },
         methods:{
             getdata(pages,num) {
@@ -68,12 +68,12 @@ import videoComponents from '@/components/videoComponents'
                 if(!i){
                     if(this.pages - 1){
                         this.pages--
-                        this.getdata(this.pages,15)
+                        this.getdata(this.pages,12)
                     }
                     
                 }else{
                     this.pages++
-                    this.getdata(this.pages,15)
+                    this.getdata(this.pages,12)
                 }
                 
                 // Object.assign()
@@ -84,12 +84,12 @@ import videoComponents from '@/components/videoComponents'
 
 <style lang="scss" scoped>
 .warper{width: 100%;display: flex;height: 100%;background-color: white;align-items: center;flex-direction: column;}
-.box{padding: 0 10px;border: 1px solid #ccc;display: flex;align-items: center;flex-direction: column;}
-.mv{display: flex;width: 900px;flex-direction: column;}
+.box{padding: 0 10px;display: flex;align-items: center;flex-direction: column;}
+.mv{display: flex;width: 1200px;flex-direction: column;}
 .mv-cont{display: flex;flex-wrap: wrap;}
 .cont{height: 200px;}
 .loading{position: relative;height: 600px;}
-.table{width: 870px;border-bottom: 2px solid rgb(92, 61, 4); font-size: 20px;color: saddlebrown;font-weight: bold;text-align: left;height: 50px;line-height: 50px;}
+.table{width: 1170px;border-bottom: 2px solid #fff; font-size: 20px;color: saddlebrown;text-align: center;height: 50px;line-height: 50px;}
 .table span{border-radius: 2px; cursor: pointer;  float: right;height: 50px;line-height: 50px;font-size: 13px;background-color: rgb(235, 228, 228);padding: 0 20px;}
 .table span:hover{border-radius: 3px;background-color: rgb(165, 108, 66); color: red;}
 .load{height: 50px;font-size: 15px; cursor: pointer;margin-top: 20px;}

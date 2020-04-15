@@ -1,6 +1,6 @@
 <template>
     <div class="warper">
-        <h2 class="h2">欢迎来到热门电台</h2>
+        <div class="h2">欢迎来到热门电台</div>
         <!-- <div class="box" v-if="djlist && dj"> -->
         <div class="box" v-if="djlist.length && dj">
             <div class="div" v-for="(item,index) in dj" :key="index" @click="getdjid(item)">
@@ -93,7 +93,7 @@ import Vue from 'vue'
 
 <style lang="scss" scoped>
 .warper{width: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;}
-.box{border: 1px solid #ccc; width: 900px;padding: 10px;display: flex; background-color: white;justify-content: space-between;flex-wrap: wrap;}
+.box{ width: 900px;padding: 10px;display: flex; background-color: white;justify-content: space-between;flex-wrap: wrap;}
 .box .div{cursor: pointer;box-sizing: border-box; width: 50%;display: flex;box-sizing: border-box;padding: 10px 20px;}
 .div img{height: 120px; width: 120px;}
 .div div{margin-left: 20px; max-width: 70%; display: flex;justify-content: center;flex-direction: column;align-items: center;}
@@ -101,11 +101,12 @@ import Vue from 'vue'
 .more{cursor: pointer;width: 900px;height: 50px;line-height: 50px;font-weight: bold;padding: 0 20px;box-sizing: border-box;}
 .more:hover{color: red;}
 .f-size{font-size: 13px;font-weight: bold;}
-.box .div:hover{box-shadow: 1px 1px 1px 1px rgb(148, 147, 147);}
+.box .div:hover{box-shadow: 1px 1px 1px 1px rgb(184, 181, 181); transition: all 0.5s ease;}
+// .box .div:hover img{transform: rotate(1.5);transition: all 0.3 ease;}
 .f-color{color: red;}
 .f-s12{font-size: 13px;font-weight: bold;}
 .time{font-size: 13px;font-weight: bold;font-family: '楷体';}
 // .cont{text-align: left;}
-.h2{font-size: 20px;height: 50px;border-bottom: 2px solid #820f37;width: 100%;text-align: left;padding: 0 50px;box-sizing: border-box;}
+.h2{font-size: 20px;height: 50px;line-height: 50px; border-bottom: 2px solid rgb(224, 220, 220);width: 950px;text-align: left;padding: 0 50px;}
 .loading{position: relative;height: 300px;width: 100%;}
 </style>

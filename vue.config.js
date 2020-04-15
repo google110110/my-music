@@ -7,6 +7,16 @@ module.exports = {
     //   }
     // }
   },
+  // lintOnSave: true,
+  //   css: {
+  //       loaderOptions: {
+  //           postcss: {
+  //               plugins: [
+  //                   require('postcss-px2rem')({remUnit: 75}),
+  //               ]
+  //           }
+  //       }
+  //   },
   //项目根路径的问题
   publicPath:'/my-music/dist'
   // publicPath:'./',

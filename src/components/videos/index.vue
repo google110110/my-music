@@ -1,7 +1,8 @@
 <template>
 <div class="fas">
     <div class="mv-warper">
-        <div class="table">MV推荐 <span @click="getrout('/recommend/leaderboard/mv')">更多</span></div>
+        <!-- <div class="table">MV推荐 <span @click="getrout('/recommend/leaderboard/mv')">更多</span></div> -->
+        <div class="table"> <img class="imgg" src="@/assets/images/icon/rmvb.png" alt=""> MV推荐 <div  @click="getrout('/recommend/leaderboard/mv')"><img src="@/assets/images/icon/l.png"></div></div>
         <div class="mv-cont" v-if="mvlist.data">
             <div v-for="(item , index) in mvlist.data" :key="index">
                 <videoComponents :mvdata="item"></videoComponents>
@@ -10,7 +11,7 @@
         <div v-else class="loading">
             <loading></loading>
         </div>
-        <div class="table">最新MV<span @click="getrout('/recommend/leaderboard/newmv')">更多</span></div>
+        <div class="table"><img src="@/assets/images/icon/rmvb.png" alt=""> 最新MV <div  @click="getrout('/recommend/leaderboard/newmv')"><img src="@/assets/images/icon/l.png"></div></div>
         <div class="mv-cont" v-if="newmv.data">
             <div v-for="(item , index) in newmv.data" :key="index">
                 <videoComponents :mvdata="item"></videoComponents>
@@ -19,7 +20,7 @@
         <div v-else class="loading">
             <loading></loading>
         </div>
-        <div class="table">网易出品MV<span @click="getrout('/recommend/leaderboard/wymv')">更多</span></div>
+        <div class="table"><img src="@/assets/images/icon/rmvb.png" alt=""> 网易出品MV <div class="l"  @click="getrout('/recommend/leaderboard/wymv')"><img src="@/assets/images/icon/l.png"></div></div>
         <div class="mv-cont" v-if="wymv.data">
             <div v-for="(item , index) in wymv.data" :key="index">
                 <videoComponents :mvdata="item"></videoComponents>
@@ -59,9 +60,9 @@ import videoComponents from '@/components/videoComponents'
             // }
         },
         mounted() {
-            this.getdata(10)
-            this.getnew(10)
-            this.getwymv(5)
+            this.getdata(12)
+            this.getnew(12)
+            this.getwymv(8)
         },
         methods: {
             getdata(num) {
@@ -96,17 +97,20 @@ import videoComponents from '@/components/videoComponents'
 
 <style lang="scss" scoped>
 .fas{display: flex;justify-content:center; width: 100%;position: relative;}
-.mv-warper{border: 1px solid #ccc; padding: 0 50px; width: 900px; display: flex;justify-content: center;flex-direction: column;align-items: center;}
-.mv-cont{ width: 900px;display: flex;flex-wrap: wrap;justify-content: space-around;}
+.mv-warper{ padding: 0 50px; width: 1200px; display: flex;justify-content: center;flex-direction: column;align-items: center;}
+.mv-cont{ width: 1200px;display: flex;flex-wrap: wrap;justify-content: space-around;}
 .mv{cursor: pointer; position: relative; border-radius: 3px;width: 150px;height: 190px;margin: 0 15px;margin-bottom: 20px;margin-top: 10px;border: 1px solid #ccc;border-top: 0; box-sizing: border-box;}
 .mv:hover{box-shadow: 2px 2px 2px 2px #ccc;}
 .mv img{width: 148px;height: 148px;border-radius: 3px;}
 .mv .cont{display: flex;justify-content: space-around; font-size: 14px;font-weight: bold;height: 40px;line-height: 40px;}
 .mv .cont span{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .loading{position: relative;height: 300px;}
-.table{width: 870px;border-bottom: 2px solid red; font-size: 20px;color: saddlebrown;font-weight: bold;text-align: left;height: 50px;line-height: 50px;}
+.table{width: 1170px;border-bottom: 2px solid #fff; font-size: 20px;color: black;text-align: left;height: 50px;line-height: 50px;}
 .table span{border-radius: 2px; cursor: pointer;  float: right;height: 50px;line-height: 50px;font-size: 13px;background-color: rgb(235, 228, 228);padding: 0 20px;}
 .table span:hover{border-radius: 3px;background-color: rgb(165, 108, 66); color: red;}
+.table img{width: 20px;height: 20px;margin-top: 15px;margin-left: 15px;}
+.table div{float: right;height: 50px;width: 50px;}
+.table div:hover{background-color: rgb(136, 133, 133);cursor: pointer;}
 .play{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 .play img{margin: auto;width: 50px; height: 50px;margin-top: 50px;}
 .router-mv{width: 100%;margin: 0;}

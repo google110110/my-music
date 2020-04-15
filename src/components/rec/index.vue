@@ -1,7 +1,7 @@
 <template>
     <div class="collection-warper">
         <div class="label"> 
-            <img src="@/assets/images/icon/dot.png" alt="">
+            <img src="@/assets/images/rec/music.png" alt="">
             <span>热门歌单</span>
         </div>
         <div class="dis-f">
@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="label"> 
-            <img src="@/assets/images/icon/dot.png" alt="">
+            <img src="@/assets/images/rec/music.png" alt="">
             <span>热门新歌</span>
         </div>
         <div class="dis-f">
@@ -123,11 +123,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.label{display: flex; border-bottom: 2px solid #800000;width: 100%;height: 50px;font-size: 23px;line-height: 50px;text-align: left;}
+.label{display: flex; border-bottom: 2px solid rgb(236, 234, 234);width: 900px;height: 50px;font-size: 23px;line-height: 50px;text-align: left;}
 .label img{height: 30px;width: 30px;margin: 10px 20px}
-.collection-warper{min-width: 900px;}
+.collection-warper{min-width: 900px; display: flex;flex-direction: column;align-items: center;}
 .dis-f{margin-bottom: 50px; width: 100%;justify-content: center;height: auto;display: flex;min-height: 300px;}
 .collection-centent{max-width: 900px; min-width: 850px; display: flex;flex-wrap: wrap;justify-content: space-between;}
 .collection{cursor: pointer; margin-top: 20px; padding:0 10px;}
+
 .loading{position: relative;height: 300px;}
 </style>

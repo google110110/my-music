@@ -30,6 +30,6 @@ import Vue from 'vue'
 </script>
 
 <style lang="scss" scoped>
-.player-warper{background-color: wheat;min-width: 1000px;}
+.player-warper{background-color: rgb(233, 223, 206);min-width: 1000px;}
 .peryer{min-width: 100%;height: 100%;}
 </style>

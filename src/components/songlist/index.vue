@@ -165,7 +165,7 @@ export default {
   margin-bottom: 10px;
 }
 .warper .centent .left :hover {
-  background-color: rgb(122, 116, 116);
+  background-color: rgb(199, 197, 197);
 }
 .f-red {
   color: red;

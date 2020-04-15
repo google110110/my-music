@@ -184,20 +184,20 @@ import Vue from 'vue'
 </script>
 
 <style lang="scss" scoped>
-.warper{width: 100%;display: flex;justify-content: center;color: white;font-size: 15px;text-align: left;}
+.warper{width: 100%;display: flex;justify-content: center;color: rgb(170, 166, 166);font-size: 15px;text-align: left;}
 .box{width: 900px;display: flex;flex-direction: column;align-items: center;}
 .bg_block{background-color: #333;}
-.message{width: 100%;border-radius: 5px;border: 1px solid #ccc;padding: 10px;margin-top: 10px;}
+.message{width: 100%;border-radius: 5px;border: 1px solid rgb(158, 157, 157);padding: 10px;margin-top: 10px;}
 .message span{line-height: 30px;}
-.message:hover{box-shadow: 2px 2px 2px 2px #ccc; h4{color: red;}}
+.message:hover{box-shadow: 2px 2px 1px 1px rgb(158, 157, 157); h4{color: red;}}
 .loading{position: relative;height: 600px;width: 100%;}
 .more{font-size: 13px;font-weight: bold;cursor: pointer;}
 .more:hover {color: red;}
 .singerimg{width: 100px;height: 100px;border-radius: 2px; margin-right: 30px;}
-.song{border-radius: 5px;width: 80%;margin-bottom: 10px; margin-left: 10%;border-top: 1px solid #ccc;border-left: 1px solid #ccc;border-bottom: 2px solid #ccc;border-right: 2px solid #ccc; display: flex;padding: 10px;box-sizing: border-box;justify-content: space-between;}
+.song{border-radius: 5px;width: 80%;margin-bottom: 10px; margin-left: 10%;border-top: 1px solid rgb(158, 157, 157);border-left: 1px solid #ccc;border-bottom: 2px solid #ccc;border-right: 2px solid #ccc; display: flex;padding: 10px;box-sizing: border-box;justify-content: space-between;}
 .song img{width: 100px;height: 100px;border-radius: 2px;float: left;}
 .song .right{min-width: 100px; float: right;height: 100px;margin-right: 50px;text-align: center;display: flex;justify-content: center;flex-direction: column;align-items: center;}
 .f-size{font-size: 17px;}
-.song:hover{box-shadow: 2px 2px 2px 2px #ccc; cursor: pointer;}
+.song:hover{box-shadow: 2px 2px 2px 2px rgb(158, 157, 157); cursor: pointer;}
 .c{display: flex!important;}
 </style>
